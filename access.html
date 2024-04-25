@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cafe-machiko</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="access.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Train+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&family=Zen+Antique&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--headerここから-->
+
+    <header class="header">
+      <div class="header-inner">
+        <div class="header-logo">
+          <a href="index.html">
+            <h1>cafe 町子</h1>
+          </a>
+        </div>
+        <button class="button" id="btn"></button>
+        <div class="header-site-menu" id="header-site-menu">
+          <nav class="site-menu">
+            <ul>
+              <li>
+                <a href="./index.html">HOME</a>
+              </li>
+              <li>
+                <a href="./concept.html">CONCEPT</a>
+              </li>
+              <li><a href="./menu.html">MENU</a></li>
+              <li><a href="./access.html">ACCESS</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="main">
+        <div class="title">
+            <h1>ACCESS</h1>
+            <p>アクセス・お問い合わせ</p>
+        </div>
+
+        <div class="map">
+            <h2>アクセスマップ</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.640165274052!2d135.73645137568923!3d35.040730872800765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600107f669cc5b7f%3A0x2f6f0d15fe9213c1!2zY2FmZeeUuuWtkA!5e0!3m2!1sja!2sjp!4v1713952539118!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+<div class="form-style">
+    <h2>お問い合わせ</h2>
+        <form id="reservationForm" class="form">
+            <label for="name" class="required">お名前</label>
+            <input type="text" id="name" name="name" required>
+          
+            <label for="email" class="required">メールアドレス</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="number">電話番号</label>
+            <input type="number" id="number" name="number" required>
+          
+            <label for="datetime" class="required">予約日時</label>
+            <input type="datetime-local" id="datetime" name="datetime" required>
+          
+            <button type="submit">予約する</button>
+          </form>
+</div>
+
+    </main>
+ 
+
+
+
+
+<footer class="footer">
+    <nav class="site-menu">
+      <ul>
+        <li>
+          <a href="./index.html">HOME</a>
+        </li>
+        <li><a href="./concept.html">CONCEPT</a></li>
+        <li><a href="./menu.html">MENU</a></li>
+        <li><a href="./access.html">ACCESS</a></li>
+      </ul>
+    </nav>
+    <a class="footer-logo" href="./index.html">
+      <p class="footer-name">cafe 町子</p>
+    </a>
+    <p class="footer-tel">TEL 075-451-2033</p>
+    <p class="footer-time">
+      OPEN <br />
+      月〜木(11:30~20:00) <br />
+      金・土(11:30~21:00) <br /> <p class="sunday">日 (11:30~17:00)</p>
+    </p>
+    <p class="footer-address">〒603-8235 京都市北区紫野下御輿町17</p>
+  </footer>
+  <script src="form.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+.main {
+  background-color: rgb(100, 60, 20);
+}
+
+.first-view {
+  height: calc(100vh - 110px);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.first-view {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  animation: slideshow 12s infinite; /* 各画像の表示時間は3秒なので、3秒×3枚=9秒 */
+}
+
+@keyframes slideshow {
+  0%,
+  100% {
+    background-image: url("RtppVaqSBgjwzwx1713722106_1713722118.jpeg");
+  }
+  33.33% {
+    background-image: url("jjj15881670392_c33ab8e9b0_z.jpeg");
+  }
+  66.67% {
+    background-image: url("1cafe町子-1700x1133.jpg");
+  }
+}
+
+.first-view-text {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-bottom: 80px;
+  font-weight: bold;
+}
+
+.first-view-text h1 {
+  font-family: "Potta One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  text-shadow: 5px 5px 10px rgb(183, 183, 183);
+}
+.first-view-text p {
+  font-size: 20px;
+  margin-top: 50px;
+  text-shadow: 5px 5px 10px rgb(183, 183, 183);
+}
+
+.lead {
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 1800px;
+  margin: 100px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 5px 5px 10px #d0b5b5;
+}
+
+.lead p {
+  text-align: center;
+  line-height: 2;
+}
+.link-button-area {
+  text-align: center;
+  margin-top: 40px;
+}
+.link-button {
+  background-color: #ff8e38;
+  min-width: 180px;
+  display: inline-block;
+  line-height: 48px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px#ffffff;
+}
+.link-button:hover {
+  background-color: rgb(144, 74, 0);
+}
+
+@media (max-width: 800px) {
+  .first-view {
+    height: calc(100vh - 50px);
+    align-items: flex-start;
+  }
+
+  .lead {
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-shadow: 5px 5px 10px #d0b5b5;
+  }
+
+  .first-view-text {
+    padding-top: 100px;
+    padding-left: 20px;
+  }
+  .first-view-text h1 {
+    font-size: 25px;
+    line-height: 55px;
+  }
+  .first-view-text p {
+    font-size: 15px;
+  }
+
+  .hobby-list li {
+    flex-shrink: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 10px;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+}
+
+/* 表示状態 */
+.visible {
+  opacity: 1;
+}
+
+/* 画像やテキストのスタイル */
+img,
+h1 {
+  margin-bottom: 20px;
+}
+
+.my-hobby {
+  color: black;
+  background-color: rgb(199, 155, 97);
+  padding-top: 45px;
+  padding-bottom: 55px;
+}
+.my-hobby h2 {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+}
+.my-hobby h2::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #000000;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-hobby li img {
+  height: 250px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.hobby-list {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 60px;
+  overflow: scroll;
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.hobby-list li {
+  flex-shrink: 0;
+  width: 260px;
+  margin-left: 100px;
+}
+.first {
+  margin-top: 0px;
+}
+.hobby-list dl {
+  margin-top: 20px;
+}
+.hobby-list dt {
+  font-weight: bold;
+}
+.hobby-list dd {
+  padding-top: 20px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>背景画像スライドショー</title>
+    <style>
+      
+    </style>.body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        transition: background-image 1s ease-in-out;
+      }
+  </head>
+  <body>
+    <div class="body">あああああああああ</div>
+    <h1>kvkgkんkんkn</h1>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = [
+          "mmm41435970.jpeg",
+          "qpTQOs9pGR56h4k1713722195_1713722203.jpeg",
+          "RtppVaqSBgjwzwx1713722106_1713722118.jpeg",
+        ];
+        let currentIndex = 0;
+
+        function changeBackground() {
+          document.body.style.backgroundImage = `url(${images[currentIndex]})`;
+          currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        // 初回の背景画像の設定
+        changeBackground();
+
+        // 3秒ごとに背景画像を変更
+        setInterval(changeBackground, 3000);
+      });
+    </script>
+  </body>
+</html>
