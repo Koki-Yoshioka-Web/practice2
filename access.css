@@ -50,10 +50,13 @@
   margin-top: 25px;
 }
 
-form {
-  background-color: #a07777;
+.form {
+  background-color: #081c0e;
   width: 930px;
   margin-top: 20px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 label,
 input {
@@ -75,4 +78,25 @@ input {
   font-size: 11px;
   color: rgb(244, 24, 0);
   margin-left: 10px;
+}
+
+@media (max-width: 800px) {
+  .map,
+  .form {
+    width: 500px;
+    margin-top: 45px;
+  }
+  .name {
+    width: 80%;
+    height: 30px;
+  }
+  .form {
+    width: 400px;
+    padding-left: 50px;
+  }
+  .btn {
+    margin-bottom: 20px;
+    height: 30px;
+    margin-left: 120px;
+  }
 }
