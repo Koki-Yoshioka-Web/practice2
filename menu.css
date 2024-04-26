@@ -2,7 +2,7 @@
 
 .title {
   height: 310px;
-  background-image: url(./RtppVaqSBgjwzwx1713722106_1713722118.jpeg);
+  background-image: url(./2cafe町子.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -47,4 +47,9 @@
 
 .footer {
   margin-top: 100px;
+}
+
+.item-list img {
+  height: 180px;
+  width: 300px;
 }
