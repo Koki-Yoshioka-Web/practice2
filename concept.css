@@ -111,3 +111,29 @@
 .footer {
   margin-top: 100px;
 }
+
+@media (max-width: 800px) {
+  .feature {
+    display: block;
+    width: 500px;
+    margin-top: 45px;
+  }
+  .feature-text {
+    margin-right: 0;
+  }
+  .reverse .feature-text {
+    margin-left: 0;
+  }
+  .feature img {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+  }
+  .movie {
+    width: 500px;
+    padding: 30px 25px;
+  }
+  .movie iframe {
+    height: 240px;
+  }
+}
