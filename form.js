@@ -1,3 +1,11 @@
+const header = document.getElementById("header-site-menu");
+
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", function () {
+  header.classList.toggle("is-show");
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("reservationForm");
 
